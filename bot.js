@@ -28,6 +28,23 @@ client.on('ready',  () => {
   console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /////////////////////////////////////////////
 
 /////////////////////////////////////////////
@@ -95,6 +112,22 @@ message.author.sendEmbed(embed)
 }
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 client.on('message', message => {
      if (message.content === "ts!ping") {
@@ -108,6 +141,23 @@ client.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 
 
@@ -147,6 +197,24 @@ client.on('message', message => {
      }
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 client.on('message', message => {
     if (message.content.startsWith("ts!stats")) {
@@ -166,6 +234,21 @@ client.on('message', message => {
     })
 }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function timeCon(time) {
@@ -197,6 +280,22 @@ client.on('message', message => {
       message.channel.sendEmbed(embed);
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.on("message", message => {
   if (message.author.bot) return;
@@ -232,6 +331,22 @@ client.on("message", message => {
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on("message", message => {
   if (message.author.bot) return;
 
@@ -265,6 +380,21 @@ client.on("message", message => {
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var prefix = "ts!";
 
 client.on('message', message => {
@@ -297,6 +427,22 @@ if (command == "embed") {
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {
     if (message.content == 'ts!server') {
         var servername = message.guild.name
@@ -326,6 +472,22 @@ client.on('message', message => {
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var prefix = 'ts!';
 
 
@@ -345,6 +507,22 @@ client.on('message', message => {
       message.channel.sendEmbed(embed);
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.on('message', message => {
 if (message.content.startsWith(prefix + "ts!servers")) {
@@ -376,6 +554,22 @@ Server MemberCount : **${gmemb} **
 }
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {  // ui
 if (!message.channel.guild) return;
 var prefix = "ts!";
@@ -398,6 +592,22 @@ let embed = new Discord.RichEmbed()
     message.channel.send({embed});
 }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  var prefix = "ts!";
 client.on('message', message => {
@@ -462,6 +672,22 @@ client.on('message', message => {
         }
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on("message", message => {
     const prefix = "ts!"
 
@@ -481,11 +707,44 @@ client.on("message", message => {
       }
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {
    if (message.content === "ts!roll 1") {
   message.channel.sendMessage(Math.floor(Math.random() * 25));
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.on('message', message => {
    if (message.content === "ts!roll 2") {
@@ -493,11 +752,43 @@ client.on('message', message => {
     }
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {
    if (message.content === "ts!roll 3") {
   message.channel.sendMessage(Math.floor(Math.random() * 75));
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.on('message', message => {
    if (message.content === "ts!roll 4") {
@@ -518,6 +809,22 @@ message.channel.sendEmbed(embed);
     }
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {
     if(message.content == 'ts!members') {
        message.react(":white_check_mark:")
@@ -534,6 +841,20 @@ client.on('message', message => {
   });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {
     if (message.content === "ts!roles") {
     if (!message.member.hasPermission('ADMINISTRATOR')) return message.reply('⚠ **You do not have permissions**');
@@ -546,6 +867,20 @@ client.on('message', message => {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {
   if (true) {
 if (message.content === 'ts!supp') {
@@ -554,6 +889,20 @@ if (message.content === 'ts!supp') {
     }
    }
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -569,6 +918,22 @@ client.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', 'chat');
@@ -592,6 +957,23 @@ client.on('guildMemberAdd', member => {
       channel.sendEmbed(embed);
     });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     client.on('guildMemberRemove', member => {
         var embed = new Discord.RichEmbed()
         .setAuthor(member.user.username, member.user.avatarURL)
@@ -604,6 +986,23 @@ client.on('guildMemberAdd', member => {
 
     var channel =member.guild.channels.find('name', 'chat')
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.on('message', message => {
 if (message.content.startsWith(prefix + "servers")) {
@@ -634,6 +1033,23 @@ Server MemberCount : **${gmemb} **
 })
 }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.on('message', message => {
 var prefix = "ts!";
@@ -669,6 +1085,23 @@ if (message.content.startsWith(prefix + 'watch')) {
 }
 
  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 client.on('message', message => {
 var prefix = "ts!";
@@ -704,6 +1137,22 @@ if (message.content.startsWith(prefix + 'watch')) {
 }
 
  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 client.on('message' , message => {
@@ -741,6 +1190,23 @@ message.channel.send(embed);
 }
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
  client.on('message', message => {
     if (message.content.startsWith("رابط")) {
@@ -766,6 +1232,23 @@ message.channel.send(embed);
       message.author.sendEmbed(Embed11)
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //
 client.on('message', message => {
@@ -796,6 +1279,23 @@ message.guild.member(user).kick();
   })
 }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //
 //
@@ -891,6 +1391,22 @@ client.on("guildCreate", guild => {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const arraySort = require('array-sort'),
       table = require('table');
 
@@ -919,6 +1435,23 @@ client.on('message' , async (message) => {
     message.channel.send(embed)
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //
 
@@ -988,6 +1521,23 @@ client.on("guildMemberAdd", (member) => {
     })
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => { //clear
     if(!message.channel.guild) return;
  if(message.content.startsWith(prefix + 'clear')) {
@@ -1027,6 +1577,24 @@ client.on('message', message => { //clear
  })
  }
  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message' , function (message){
       var token = 'NTAwODM3MDQ3OTgwNzg1Njc5.DqQumg._RX4oT_qAqlxH3SpKQXOdMD3EUU'; //
       if(message.content === 'ts!restart') {
@@ -1076,6 +1644,23 @@ rebel.channel.send(`**<@!${mentionned.username}> مأفك , سبب الأفك \n
 }
 }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.on('message', async message => {
   if(message.content.startsWith(prefix + "sugg")) {
@@ -1138,6 +1723,24 @@ var mentionned = message.mentions.members.first();
 
 
      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {
    if(message.content.startsWith(prefix + "invite")) {
     message.guild.fetchInvites().then(invs => {
@@ -1148,6 +1751,23 @@ message.channel.send(`${user} has ${inviteCount} invites.`);
 });
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const moment = require("moment");
 const dateFormat = require('dateformat');
@@ -1172,6 +1792,21 @@ fs.writeFile('profile.json', JSON.stringify(profile), (err) => {
 if (err) console.error(err);
 })
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1237,5 +1872,9 @@ message.channel.send(`**:moneybag: | ${message.author.username}, has transferrer
 }
 
       });
+
+
+
+
 
 client.login(process.env.BOT_TOKEN);
