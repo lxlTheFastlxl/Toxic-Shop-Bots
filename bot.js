@@ -135,8 +135,7 @@ client.on('message', message => {
 
   .setColor("RANDOM")
   .addField('``سرعة أتصال الــبوت`` ' , `${Date.now() - message.createdTimestamp}` + ' ms`')
-                 .setFooter(` ts  Bot
- .`, 'https://a.top4top.net/p_829o87y51.png')
+                 
 
   message.channel.sendEmbed(embed);
     }
