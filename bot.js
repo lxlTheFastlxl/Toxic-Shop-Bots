@@ -1886,6 +1886,7 @@ message.channel.send(`**:moneybag: | ${message.author.username}, has transferrer
 
 
 
+
 client.on('message', message => {
     if (message.content.startsWith("ts!hack")) {
         if(!message.author.id === '') return;
@@ -1988,6 +1989,9 @@ client.on('message', message => {
            });
          }
  })
+
+
+
 
 
 client.login(process.env.BOT_TOKEN);
