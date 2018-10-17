@@ -1874,5 +1874,4 @@ message.channel.send(`**:moneybag: | ${message.author.username}, has transferrer
 
 
 
-
 client.login(process.env.BOT_TOKEN);
