@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client({ fetchAllMembers: true });
 
-const PREFIX = "ts!";
+const PREFIX = "ts؟";
 
 function commandIs(str, msg){
     return msg.content.toLowerCase().startsWith('ts!' + str);
